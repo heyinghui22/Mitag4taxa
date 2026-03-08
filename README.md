@@ -58,20 +58,15 @@ For 18S rRNA analysis
 mitag4taxa -i ./testdata/ -t 18S -th 10
 
 3. After processing, a series of folders will be automatically generated within your input parent directory to organize the results:
-
+```text
 ./testdata/
-
     └── illu/             # Original input data
-
     └── seqkit/           # FASTA files converted from FASTQ
-
     └── rRNA_prediction/  # Full rRNA sequences predicted by HMMER
-
     └── 16S/ (or 18S/)    # Extracted 16S or 18S rRNA sequences
-
     └── v4/ (or v9/)      # Fasta sequences of the specific variable region (V4/V9)
-
     └── v4seq/ (or v9seq/)# Fastq sequences of the specific variable region (V4/V9)
+```
 
 
 Development environment: Linux  
@@ -80,6 +75,7 @@ Development tool: Pycharm and VScode
 ## Contact
 
 If you have any questions, please feel free to contact: heyinghu23@mails.tsinghua.edu.cn
+
 
 
 
