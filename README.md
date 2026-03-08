@@ -39,13 +39,13 @@ Crucial: Before running the software, you must organize your input data exactly 
 
 （3）Place your raw Illumina sequencing files (.fastq or .fq) into the illu/ folder.
 
-Target Structure:
 
+**Target Structure:**
+```text
 ./testdata/
-
 └── illu/
-
     └── your_raw_data.fastq
+
 
 2. Run the Analysis
 Execute the following command in your terminal:
@@ -79,6 +79,7 @@ Development tool: Pycharm and VScode
 ## Contact
 
 If you have any questions, please feel free to contact: heyinghu23@mails.tsinghua.edu.cn
+
 
 
 
