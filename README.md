@@ -44,7 +44,8 @@ Crucial: Before running the software, you must organize your input data exactly 
 ```text
 ./testdata/
 └── illu/
-    └── your_raw_data.fastq```
+    └── your_raw_data.fastq
+```
 
 
 2. Run the Analysis
@@ -79,6 +80,7 @@ Development tool: Pycharm and VScode
 ## Contact
 
 If you have any questions, please feel free to contact: heyinghu23@mails.tsinghua.edu.cn
+
 
 
 
