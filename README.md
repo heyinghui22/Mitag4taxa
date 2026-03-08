@@ -29,17 +29,7 @@ The command provided, mitag4taxa -i ./testdata -t 16S/18S -th 10, outlines the b
 
 After processing, it will create an output folder within ./testdata to store the results of the analysis. 
 
-## optional arguments:
-  -i --input_folderpath, 
-                  The parent directory of the folder containing the Illumina sequencing sequences that need to be extracted.                      
-  -t --type, 
-                  Choose whether to extract 16SrDNA sequence and corresponding v4 region sequence or extract 18SrDNA sequence and corresponding v9 region sequence from metagenome or metatranscriptome. You can type '18S' or '16S'.
-  -th --thread, 
-                  The number of threads, default is 1
-
-
-
-🚀 Usage Guide （example）
+## Usage Guide （example）
 1. Prepare Input Folder Structure
 Crucial: Before running the software, you must organize your input data exactly as follows:
 
@@ -51,26 +41,34 @@ Crucial: Before running the software, you must organize your input data exactly 
 
 Target Structure:
 ./testdata/
+
 └── illu/
+
     └── your_raw_data.fastq
 
 2. Run the Analysis
 Execute the following command in your terminal:
 
-# For 16S rRNA analysis
+For 16S rRNA analysis
 mitag4taxa -i ./testdata/ -t 16S -th 10
 
-# For 18S rRNA analysis
+For 18S rRNA analysis
 mitag4taxa -i ./testdata/ -t 18S -th 10
 
 3. After processing, a series of folders will be automatically generated within your input parent directory to organize the results:
 
 ./testdata/
+
 ├── illu/             # Original input data
+
 ├── seqkit/           # FASTA files converted from FASTQ
+
 ├── rRNA_prediction/  # Full rRNA sequences predicted by HMMER
+
 ├── 16S/ (or 18S/)    # Extracted 16S or 18S rRNA sequences
+
 ├── v4/ (or v9/)      # Fasta sequences of the specific variable region (V4/V9)
+
 └── v4seq/ (or v9seq/)# Fastq sequences of the specific variable region (V4/V9)
 
 
@@ -78,4 +76,5 @@ Development environment: Linux
 Development tool: Pycharm and VScode
 
 ## Contact
+
 If you have any questions, please feel free to contact: heyinghu23@mails.tsinghua.edu.cn
